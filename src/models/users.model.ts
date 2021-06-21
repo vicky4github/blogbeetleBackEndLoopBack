@@ -1,7 +1,7 @@
 import {Entity, model, property} from '@loopback/repository';
 
 @model()
-export class Blog extends Entity {
+export class Users extends Entity {
   @property({
     type: 'number',
     id: true,
@@ -13,38 +13,33 @@ export class Blog extends Entity {
     type: 'string',
     required: true,
   })
-  title: string;
+  emailAddress: string;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  password: string;
 
   @property({
     type: 'string',
   })
-  coverImgSrc?: string;
+  imgSrc?: string;
 
   @property({
     type: 'string',
   })
-  subTitle?: string;
-
-  @property({
-    type: 'number',
-  })
-  authorId?: number;
+  userName?: string;
 
   @property({
     type: 'string',
   })
-  blogContent?: string;
-
-
-  @property({
-    type: 'string',
-  })
-  published?: string;
+  fullName?: string;
 
   @property({
     type: 'string',
   })
-  categories?: string;
+  socialLinks?: string;
 
   @property({
     type: 'string',
@@ -57,13 +52,13 @@ export class Blog extends Entity {
   updatedAt?: string;
 
 
-  constructor(data?: Partial<Blog>) {
+  constructor(data?: Partial<Users>) {
     super(data);
   }
 }
 
-export interface BlogRelations {
+export interface UsersRelations {
   // describe navigational properties here
 }
 
-export type BlogWithRelations = Blog & BlogRelations;
+export type UsersWithRelations = Users & UsersRelations;
