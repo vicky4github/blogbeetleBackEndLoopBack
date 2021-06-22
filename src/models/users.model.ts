@@ -6,8 +6,9 @@ export class Users extends Entity {
     type: 'string',
     id: true,
     generated: false,
+    required: true,
   })
-  id?: number;
+  id: string;
 
   @property({
     type: 'string',
