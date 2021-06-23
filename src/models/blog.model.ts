@@ -26,9 +26,9 @@ export class Blog extends Entity {
   subTitle?: string;
 
   @property({
-    type: 'number',
+    type: 'string',
   })
-  authorId?: number;
+  authorId?: string;
 
   @property({
     type: 'string',
