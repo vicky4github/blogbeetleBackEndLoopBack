@@ -40,6 +40,17 @@ export class Users extends Entity {
   @property({
     type: 'string',
   })
+  bio?: string;
+
+  @property({
+    type: 'string',
+  })
+  interests?: string;
+
+
+  @property({
+    type: 'string',
+  })
   socialLinks?: string;
 
   @property({
