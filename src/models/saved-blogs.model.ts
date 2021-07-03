@@ -1,7 +1,7 @@
 import {Entity, model, property} from '@loopback/repository';
 
 @model()
-export class BlogComments extends Entity {
+export class SavedBlogs extends Entity {
   @property({
     type: 'number',
     id: true,
@@ -22,10 +22,9 @@ export class BlogComments extends Entity {
   blogId: number;
 
   @property({
-    type: 'string',
-    required: true,
+    type: 'number',
   })
-  comment: string;
+  active?: number;
 
   @property({
     type: 'string',
@@ -38,13 +37,13 @@ export class BlogComments extends Entity {
   updatedAt?: string;
 
 
-  constructor(data?: Partial<BlogComments>) {
+  constructor(data?: Partial<SavedBlogs>) {
     super(data);
   }
 }
 
-export interface BlogCommentsRelations {
+export interface SavedBlogsRelations {
   // describe navigational properties here
 }
 
-export type BlogCommentsWithRelations = BlogComments & BlogCommentsRelations;
+export type SavedBlogsWithRelations = SavedBlogs & SavedBlogsRelations;

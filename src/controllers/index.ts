@@ -5,3 +5,5 @@ export * from './blog-comments-controller.controller';
 export * from './users-controller.controller';
 export * from './categories-controller.controller';
 export * from './blog-statistics-controller.controller';
+export * from './blog-likes-controller.controller';
+export * from './saved-blogs-controller.controller';
