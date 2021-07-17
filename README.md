@@ -59,6 +59,8 @@ npm i
 
 ## Usage
 
+!Important
+
 Create Tables following the schema as in [BlogBeetle Scheme](https://blogbeetlebucket.s3.ap-south-1.amazonaws.com/BlogBeetleSchema.htm)
 
 Update blog-beetle-db.datasource.ts File in datasources directory with appropriate credentials of your MYSQL .
@@ -82,6 +84,14 @@ npm test
 # Application In Action
 
 ![Application Gif ](https://blogbeetlebucket.s3.ap-south-1.amazonaws.com/ezgif-4-8d5550f1bf0d.gif 'BlogBeetle')
+
+## Product Requirement Document
+
+[PRD](https://samd.slite.com/api/s/note/ABNbo4JmMEe6qk71GRhzX3/BlogBeetle)
+
+## High Level Design Document
+
+[HLD](<https://blogbeetlebucket.s3.ap-south-1.amazonaws.com/BlogBeetleS+(1).svg>)
 
 ## License
 
